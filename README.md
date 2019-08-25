@@ -1,8 +1,8 @@
-# The_Constitution_Of_India
+# The Constitution Of India (COI)
 The entire Constitution of India as a single JSON file
 
 
-## To download from Command Line
+## To Download from Command Line
 
 ### 1. For Linux / Mac use **wget** / **curl**
 
@@ -75,3 +75,27 @@ npm run download_COI
 ```
 
 For Windows use [**Invoke-WebRequest**](#2-for-windows-use-invoke-webrequest) and for Mac use [**curl**](#curl) command.
+
+## Python sample script to Download COI.json
+
+```python
+from subprocess import run, PIPE
+from sys import platform
+URL = 'https://raw.githubusercontent.com/Yash-Handa/The_Constitution_Of_India/master/COI.json'
+
+test = None
+if platform == 'linux' or platform == 'linux2':
+    test = run(['wget', URL, '-O COI.json'], stdout=PIPE, stderr=PIPE)
+elif platform == 'darwin':
+    test = run(['curl', URL, '-o COI.json'], stdout=PIPE, stderr=PIPE)
+elif platform == 'win32':
+    test = run(['Invoke-WebRequest', URL, '-O COI.json'], stdout=PIPE, stderr=PIPE)
+test.check_returncode()
+```
+
+The above script will create a COI.json file in the directory from which the script is exicuted.
+If the script is saved in a file called **download_COI.py** then the following commanf will execute it:
+
+```shell
+$ python3 download_COI.py
+```
