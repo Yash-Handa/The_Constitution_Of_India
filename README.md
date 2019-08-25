@@ -55,14 +55,14 @@ If the script is saved in a file called **download_COI.js** then the following c
 $ node download_COI.js
 ```
 
-or can be automated by defining as a script in package.json:
+### or can be automated by defining as a script in package.json:
 
-For Linux(using **wget**):
+#### For Linux(using **wget**):
 
 ```js
 ...
 "scripts": {
-    "download_COI": "wget https://raw.githubusercontent.com/Yash-Handa/The_Constitution_Of_India/master/COI.json -O COI.json",
+    "download_COI": "wget https://raw.githubusercontent.com/Yash-Handa/The_Constitution_Of_India/master/COI.json -O COI.json"
     ...
   },
   ...
@@ -74,4 +74,4 @@ Execution:
 npm run download_COI
 ```
 
-For Windows use [**Invoke-WebRequest**]() and for Mac use [**curl**]() command.
+For Windows use [**Invoke-WebRequest**](#2-for-windows-use-invoke-webrequest) and for Mac use [**curl**](#curl) command.
