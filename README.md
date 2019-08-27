@@ -1,5 +1,4 @@
 ![GitHub](https://img.shields.io/github/license/Yash-Handa/The_Constitution_Of_India?style=for-the-badge)
-![GitHub file size in bytes](https://img.shields.io/github/size/Yash-Handa/The_Constitution_Of_India/COI.json?style=for-the-badge)
 
 # The Constitution Of India (COI)
 The entire Constitution of India as a single JSON file
