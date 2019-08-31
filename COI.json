@@ -564,6 +564,133 @@
           "ClauseDesc": "The State shall not, in granting aid to educational institutions, discriminate against any educational institution on the ground that it is under the management of a minority, whether based on religion or language."
         }
       ]
+    },
+    {
+      "ArtNo": "31",
+      "Name": "Compulsory acquisition of property.",
+      "ArtDesc": "Omitted by the Constitution",
+      "Status": "Omitted"
+    },
+    {
+      "ArtNo": "31A",
+      "Name": "Saving of laws providing for acquisition of estates, etc.",
+      "SubHeading": "Saving of Certain Laws",
+      "Clauses": [
+        {
+          "ClauseNo": "1",
+          "ClauseDesc": "Notwithstanding anything contained in article 13, no law providing for—",
+          "SubClauses": [
+            {
+              "SubClauseNo": "a",
+              "SubClauseDesc": "the acquisition by the State of any estate or of any rights therein or the extinguishment or modification of any such rights, or"
+            },
+            {
+              "SubClauseNo": "b",
+              "SubClauseDesc": "the taking over of the management of any property by the State for a limited period either in the public interest or in order to secure the proper management of the property, or"
+            },
+            {
+              "SubClauseNo": "c",
+              "SubClauseDesc": "the amalgamation of two or more corporations either in the public interest or in order to secure the proper management of any of the corporations, or"
+            },
+            {
+              "SubClauseNo": "d",
+              "SubClauseDesc": "the extinguishment or modification of any rights of managing agents, secretaries and treasurers, managing directors, directors or managers of corporations, or of any voting rights of shareholders thereof, or"
+            },
+            {
+              "SubClauseNo": "e",
+              "SubClauseDesc": "the extinguishment or modification of any rights accruing by virtue of any agreement, lease or licence for the purpose of searching for, or winning, any mineral or mineral oil, or the premature termination or cancellation of any such agreement, lease or licence,"
+            }
+          ],
+          "FollowUp": "shall be deemed to be void on the ground that it is inconsistent with, or takes away or abridges any of the rights conferred by article 14 or article 19:\nProvided that where such law is a law made by the Legislature of a State, the provisions of this article shall not apply thereto unless such law, having been reserved for the consideration of the President, has received his assent:\nProvided further that where any law makes any provision for the acquisition by the State of any estate and where any land comprised therein is held by a person under his personal cultivation, it shall not be lawful for the State to acquire any portion of such land as is within the ceiling limit applicable to him under any law for the time being in force or any building or structure standing thereon or appurtenant thereto, unless the law relating to the acquisition of such land, building or structure, provides for payment of compensation at a rate which shall not be less than the market value thereof."
+        },
+        {
+          "ClauseNo": "2",
+          "ClauseDesc": " In this article,—",
+          "SubClauses": [
+            {
+              "SubClauseNo": "a",
+              "SubClauseDesc": "the expression “estate” shall, in relation to any local area, have the same meaning as that expression or its local equivalent has in the existing law relating to land tenures in force in that area and shall also include—\n(i) any jagir, inam or muafi or other similar grant and in the States of Tamil Nadu and Kerala, any janmam right;\n(ii) any land held under ryotwari settlement;\n(iii) any land held or let for purposes of agriculture or for purposes ancillary thereto, including waste land, forest land, land for pasture or sites of buildings and other structures occupied by cultivators of land, agricultural labourers and village artisans;"
+            },
+            {
+              "SubClauseNo": "b",
+              "SubClauseDesc": "the expression “rights”, in relation to an estate, shall include any rights vesting in a proprietor, sub-proprietor, under-proprietor, tenure-holder, raiyat, under-raiyator other intermediary and any rights or privileges in respect of land revenue."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ArtNo": "31B",
+      "Name": "Validation of certain Acts and Regulations.",
+      "SubHeading": "Saving of Certain Laws",
+      "ArtDesc": "Without prejudice to the generality of the provisions contained in article 31A, none of the Acts and Regulations specified in the Ninth Schedule nor any of the provisions thereof shall be deemed to be void, or ever to have become void, on the ground that such Act, Regulation or provision is inconsistent with, or takes away or abridges any of the rights conferred by, any provisions of this Part, and notwithstanding any judgment, decree or order of any court or Tribunal to the contrary, each of the said Acts and Regulations shall, subject to the power of any competent Legislature to repeal or amend it, continue in force."
+    },
+    {
+      "ArtNo": "31C",
+      "Name": "Saving of laws giving effect to certain directive principles.",
+      "SubHeading": "Saving of Certain Laws",
+      "ArtDesc": "Notwithstanding anything contained in article 13, no law giving effect to the policy of the State towards securing all or any of the principles laid down in Part IV shall be deemed to be void on the ground that it is inconsistent with, or takes away or abridges any of the rights conferred by article 14 or article 19; and no law containing a declaration that it is for giving effect to such policy shall be called in question in any court on the ground that it does not give effect to such policy:\nProvided that where such law is made by the Legislature of a State, the provisions of this article shall not apply thereto unless such law, having been reserved for the consideration of the President, has received his assent."
+    },
+    {
+      "ArtNo": "31D",
+      "Name": "Saving of laws in respect of anti-national activities.",
+      "SubHeading": "Saving of Certain Laws",
+      "ArtDesc": "Omitted by the Constitution.",
+      "Status": "Omitted"
+    },
+    {
+      "ArtNo": "32",
+      "Name": "Remedies for enforcement of rights conferred by this Part.",
+      "SubHeading": "Right to Constitutional Remedies",
+      "Clauses": [
+        {
+          "ClauseNo": "1",
+          "ClauseDesc": "The right to move the Supreme Court by appropriate proceedings for the enforcement of the rights conferred by this Part is guaranteed."
+        },
+        {
+          "ClauseNo": "2",
+          "ClauseDesc": "The Supreme Court shall have power to issue directions or orders or writs, including writs in the nature of habeas corpus, mandamus, prohibition, quo warranto and certiorari, whichever may be appropriate, for the enforcement of any of the rights conferred by this Part."
+        },
+        {
+          "ClauseNo": "3",
+          "ClauseDesc": "Without prejudice to the powers conferred on the Supreme Court by clauses (1) and (2), Parliament may by law empower any other court to exercise within the local limits of its jurisdiction all or any of the powers exercisable by the Supreme Court under clause (2)"
+        },
+        {
+          "ClauseNo": "4",
+          "ClauseDesc": "The right guaranteed by this article shall not be suspended except as otherwise provided for by this Constitution."
+        }
+      ]
+    },
+    {
+      "ArtNo": "32A",
+      "Name": "Constitutional validity of State laws not to be considered in proceedings under article 32.",
+      "SubHeading": "Right to Constitutional Remedies",
+      "ArtDesc": "Omitted by the Constitution.",
+      "Status": "Omitted"
+    },
+    {
+      "ArtNo": "33",
+      "Name": "Power of Parliament to modify the rights conferred by this Part in their application to Forces, etc.",
+      "SubHeading": "Right to Constitutional Remedies",
+      "ArtDesc": "Parliament may, by law, determine to what extent any of the rights conferred by this Part shall, in their application to,—\n(a) the members of the Armed Forces; or\n(b) the members of the Forces charged with the maintenance of public order; or\n(c) persons employed in any bureau or other organisation established by the State for purposes of intelligence or counter intelligence; or\n(d) person employed in, or in connection with, the telecommunication systems set up for the purposes of any Force, bureau or organisation referred to in clauses (a) to (c), be restricted or abrogated so as to ensure the proper discharge of their duties and the maintenance of discipline among them."
+    },
+    {
+      "ArtNo": "34",
+      "Name": "Restriction on rights conferred by this Part while martial law is in force in any area.",
+      "SubHeading": "Right to Constitutional Remedies",
+      "ArtDesc": "Notwithstanding anything in the foregoing provisions of this Part, Parliament may by law indemnify any person in the service of the Union or of a State or any other person in respect of any act done by him in connection with the maintenance or restoration of order in any area within the territory of India where martial law was in force or validate any sentence passed, punishment inflicted, forfeiture ordered or other act done under martial law in such area."
+    },
+    {
+      "ArtNo": "35",
+      "Name": "Legislation to give effect to the provisions of this Part.",
+      "SubHeading": "Right to Constitutional Remedies",
+      "ArtDesc": "Notwithstanding anything in this Constitution,—\n(a) Parliament shall have, and the Legislature of a State shall not have, power to make laws—\n(i) with respect to any of the matters which under clause (3) of article 16, clause (3) of article 32, article 33 and article 34 may be provided for by law made by Parliament; and\n(ii) for prescribing punishment for those acts which are declared to be offences under this Part,\nand Parliament shall, as soon as may be after the commencement of this Constitution, make laws for prescribing punishment for the acts referred to in sub-clause (ii);\n(b) any law in force immediately before the commencement of this Constitution in the territory of India with respect to any of the matters referred to in sub-clause (i) of clause (a) or providing for punishment for any act referred to in sub-clause (ii) of that clause shall, subject to the terms thereof and to any adaptations and modifications that may be made therein under article 372, continue in force until altered or repealed or amended by Parliament.",
+      "Explanations": [
+        {
+          "ExplanationNo": "1",
+          "Explanation": "In this article, the expression “law in force” has the same meaning as in article 372."
+        }
+      ]
     }
   ],
   [
