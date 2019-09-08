@@ -5,6 +5,107 @@ The entire Constitution of India as a single JSON file
 
 ## COI.json Structure
 
+The entire COI.json file is an array with 3 elements:
+
+- **Element 1** *(0th index)*: This is an array of all the Articles of the Constitution. Each Article is an object with key value pairs described [below]().
+- **Element 2** *(1st index)*: This is an array of all the Parts of the Constitution. Each Part is an object with key value pairs described [below]().
+- **Element 3** *(2nd index)*: This is an array of all the Schedules of the Constitution. Each Schedule is an object with key value pairs described [below]().
+
+### Articles
+
+Each Article object has the following keys:
+
+```js
+{
+  "ArtNo": String,
+  "Name": String,
+  "SubHeading": String,
+  "Status": String,
+  "Explanations": Array,
+  "ArtDesc": String,
+  "Clauses": Array
+}
+```
+
+#### ArtNo: String
+
+Each article has a unique `ArtNo` which is a combination of number and uppercase alphabets. It can be used as the ID of each Article. Eg: `5`, `31A`, etc. It is **always present**.
+
+#### Name: String
+
+Each article has a `Name` key which acts like a short description of the Article. Eg: `Parliament to regulate the right of citizenship by law.`, `Equality before law.`, etc. It is **always present**.
+
+#### SubHeading: String
+
+Some Articles have a special `SubHeading` key which represent the SubHeading under which the Article is present in the Constitution. Eg: `Right to Equality`, `Right against Exploitation`, etc. It is **NOT always present**.
+
+#### Status: String
+
+The COI.json file also have some articles which have been omitted from the constitution. Such articles have a special key: `Status` which have the value of `Omitted` i.e., `"Status": "Omitted"`
+
+#### Explanations: Array
+
+Some Articles in the Indian Constitution have explanations in them. In COI.json these explanations are present in the `Explanations` key which is an array of objects. Each object of the array represents an explanation of the article. It is **NOT always present**.
+
+Each explanation object in the `Explanations` array has the following keys:
+
+```js
+{
+  "ExplanationNo": String,
+  "Explanation": String
+}
+```
+
+#### ExplanationNo: String
+
+Each explanation object in the `Explanations` array has the `ExplanationNo` key which is used to identify an explanation in an article. It consist of numbers.
+
+#### Explanation: String
+
+Each explanation object in the `Explanations` array has the `Explanation` key which contains the actual explanation of the article.
+
+Example of the `Explanations` array:
+
+```js
+...
+"Explanations": [
+  {
+    "ExplanationNo": "1",
+    "Explanation": "..."
+  },
+  {
+    "ExplanationNo": "2",
+    "Explanation": "..."
+  }
+]
+...
+```
+
+#### ArtDesc: String
+
+Most of the articles have a `ArtDesc` key which contains the information / details of the Article.  
+`Name` + `ArtDesc` + `Explanations` is the complete Article as present in the Constitution of India. It is **NOT always present**. If `ArtDesc` is not present the `Clauses` will be present.
+
+#### Clauses: Array
+
+Most of the articles have a `Clauses` key which is an array of objects. Each object of the array represents a clause of the article. `Name` + `Clauses` + `Explanations` is the complete Article as present in the Constitution of India. It is **NOT always present**. If `Clauses` is not present the `ArtDesc` will be present.
+
+Each clause object in the `Clauses` array has the following keys:
+
+```js
+{
+  "ClauseNo": String,
+  "ClauseDesc": String,
+  "SubClauses": Array,
+  "Status": String,
+  "FollowUp": String
+}
+```
+
+### Parts
+
+### Schedules
+
 ## To Download from Command Line
 
 ### 1. For Linux / Mac use **wget** / **curl**
@@ -51,8 +152,8 @@ if (platform === 'win32') {
 }
 ```
 
-The above script will create a COI.json file in the directory from which the script is exicuted.
-If the script is saved in a file called **download_COI.js** then the following commanf will execute it:
+The above script will create a COI.json file in the directory from which the script is executed.
+If the script is saved in a file called **download_COI.js** then the following command will execute it:
 
 ```shell
 $ node download_COI.js
@@ -96,8 +197,8 @@ elif platform == 'win32':
 test.check_returncode()
 ```
 
-The above script will create a COI.json file in the directory from which the script is exicuted.
-If the script is saved in a file called **download_COI.py** then the following commanf will execute it:
+The above script will create a COI.json file in the directory from which the script is executed.
+If the script is saved in a file called **download_COI.py** then the following command will execute it:
 
 ```shell
 $ python3 download_COI.py
