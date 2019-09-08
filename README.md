@@ -7,9 +7,9 @@ The entire Constitution of India as a single JSON file
 
 The entire COI.json file is an array with 3 elements:
 
-- **Element 1** *(0th index)*: This is an array of all the Articles of the Constitution. Each Article is an object with key value pairs described [below]().
-- **Element 2** *(1st index)*: This is an array of all the Parts of the Constitution. Each Part is an object with key value pairs described [below]().
-- **Element 3** *(2nd index)*: This is an array of all the Schedules of the Constitution. Each Schedule is an object with key value pairs described [below]().
+- **Element 1** *(0th index)*: This is an array of all the Articles of the Constitution. Each Article is an object with key value pairs described [below](#articles).
+- **Element 2** *(1st index)*: This is an array of all the Parts of the Constitution. Each Part is an object with key value pairs described [below](#parts).
+- **Element 3** *(2nd index)*: This is an array of all the Schedules of the Constitution. Each Schedule is an object with key value pairs described [below](#schedules).
 
 ### Articles
 
