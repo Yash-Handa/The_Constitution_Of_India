@@ -144,8 +144,8 @@ The COI.json file also have some Sub-Clauses which have been omitted from the co
 
 Some of the clause have an additional `FollowUp` key which contains information that is not part of any Sub-Clause and is present at the end of the Clause. They are only present if the `SubClauses` array is present and there is some general information related to the Clause in the Constitution of India.
 
->**Note**:Each Article has only one of either `Clauses` or `ArtDesc`.
->**Note**: Each Clause has a combination of both `SubClauses` and `ClauseDesc`. i.e., either clause will have a `ClauseDesc` and an additional `SubClauses` in it.
+>**Note**:Each Article has only one of either `Clauses` or `ArtDesc`.  
+>**Note**: Each Clause has a combination of both `SubClauses` and `ClauseDesc`. i.e., either clause will have a `ClauseDesc` and an additional `SubClauses` in it.  
 >**Note**: Preamble is the first article in the list whit `ArtNo: 0`.
 
 ### Complete Article Structure
