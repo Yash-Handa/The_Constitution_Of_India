@@ -11,7 +11,7 @@ The entire COI.json file is an array with 3 elements:
 - **Element 2** *(1st index)*: This is an array of all the Parts of the Constitution. Each Part is an object with key value pairs described [below](#parts).
 - **Element 3** *(2nd index)*: This is an array of all the Schedules of the Constitution. Each Schedule is an object with key value pairs described [below](#schedules).
 
-### Articles
+## Articles
 
 Each Article object has the following keys:
 
@@ -27,23 +27,23 @@ Each Article object has the following keys:
 }
 ```
 
-#### ArtNo: String
+### ArtNo: String
 
 Each article has a unique `ArtNo` which is a combination of number and uppercase alphabets. It can be used as the ID of each Article. Eg: `5`, `31A`, etc. It is **always present**.
 
-#### Name: String
+### Name: String
 
 Each article has a `Name` key which acts like a short description of the Article. Eg: `Parliament to regulate the right of citizenship by law.`, `Equality before law.`, etc. It is **always present**.
 
-#### SubHeading: String
+### SubHeading: String
 
 Some Articles have a special `SubHeading` key which represent the SubHeading under which the Article is present in the Constitution. Eg: `Right to Equality`, `Right against Exploitation`, etc. It is **NOT always present**.
 
-#### Status: String
+### Status: String
 
-The COI.json file also have some articles which have been omitted from the constitution. Such articles have a special key: `Status` which have the value of `Omitted` i.e., `"Status": "Omitted"`
+The COI.json file also have some articles which have been omitted from the constitution. Such articles have a special key: `Status` which have the value of `Omitted` i.e., `"Status": "Omitted"`. It is **NOT always present**.
 
-#### Explanations: Array
+### Explanations: Array
 
 Some Articles in the Indian Constitution have explanations in them. In COI.json these explanations are present in the `Explanations` key which is an array of objects. Each object of the array represents an explanation of the article. It is **NOT always present**.
 
@@ -81,12 +81,12 @@ Example of the `Explanations` array:
 ...
 ```
 
-#### ArtDesc: String
+### ArtDesc: String
 
 Most of the articles have a `ArtDesc` key which contains the information / details of the Article.  
 `Name` + `ArtDesc` + `Explanations` is the complete Article as present in the Constitution of India. It is **NOT always present**. If `ArtDesc` is not present the `Clauses` will be present.
 
-#### Clauses: Array
+### Clauses: Array
 
 Most of the articles have a `Clauses` key which is an array of objects. Each object of the array represents a clause of the article. `Name` + `Clauses` + `Explanations` is the complete Article as present in the Constitution of India. It is **NOT always present**. If `Clauses` is not present the `ArtDesc` will be present.
 
@@ -102,9 +102,84 @@ Each clause object in the `Clauses` array has the following keys:
 }
 ```
 
-### Parts
+#### ClauseNo: String
 
-### Schedules
+Each clause has a `ClauseNo` key which can uniquely identify that clause in it's article i.e., each `ClauseNo` is unique only in its parent Article and clause belonging to different articles can have same `ClauseNo`. It is **always present**.
+
+#### Status: String
+
+The COI.json file also have some clauses which have been omitted from the constitution. Such clauses have a special key: `Status` which have the value of `Omitted` i.e., `"Status": "Omitted"`. It is **NOT always present**.
+
+#### ClauseDesc: String
+
+Each Clause has a `ClauseDesc` key which either contains the entire clause or starting line of the Clauses which have Sub-Clause in them. It is **always present**.
+
+#### SubClauses: Array
+
+Some of the Clauses have a `SubClauses` key which is an array of objects. Each object of the array represents a Sub-Clause of that Clause. It is **NOT always present**.
+
+Each Sub-Clause object in the `SubClauses` array has the following keys:
+
+```js
+{
+  "SubClauseNo": String,
+  "SubClauseDesc": String,
+  "Status": String,
+}
+```
+
+#### SubClauseNo: String
+
+Each Sub-Clause has a `SubClauseNo` key which can uniquely identify that Sub-Clause in it's parent Clause i.e., each `SubClauseNo` is unique only in its parent Clause and Sub-Clause belonging to different Clauses can have same `SubClauseNo`. `SubClauseNo` contains lowercase alphabets only, eg: `a`, `f`, etc .It is **always present**.
+
+#### SubClauseDesc: String
+
+Each Sub-Clause has a `SubClauseDesc` key which contains the entire Sub-Clause. It is **always present**.
+
+#### Status: String
+
+The COI.json file also have some Sub-Clauses which have been omitted from the constitution. Such Sub-Clauses have a special key: `Status` which have the value of `Omitted` i.e., `"Status": "Omitted"`. It is **NOT always present**.
+
+#### FollowUp: String
+
+Some of the clause have an additional `FollowUp` key which contains information that is not part of any Sub-Clause and is present at the end of the Clause. They are only present if the `SubClauses` array is present and there is some general information related to the Clause in the Constitution of India.
+
+>**Note**:Each Article has only one of either `Clauses` or `ArtDesc`.
+>**Note**: Each Clause has a combination of both `SubClauses` and `ClauseDesc`. i.e., either clause will have a `ClauseDesc` and an additional `SubClauses` in it.
+>**Note**: Preamble is the first article in the list whit `ArtNo: 0`.
+
+### Complete Article Structure
+
+```js
+{
+  "ArtNo": String,
+  "Name": String,
+  "SubHeading": ? String,
+  "ArtDesc": ? String,
+  "Clauses": ? Array {
+      "ClauseNo": String,
+      "ClauseDesc": String,
+      "SubClauses": ? Array {
+          "SubClauseNo": String,
+          "SubClauseDesc": String,
+          "Status": ? String,
+      },
+      "Status": ? String,
+      "FollowUp": ? String
+  },
+  "Status": ? String,
+  "Explanations": ? Array {
+      "ExplanationNo": String,
+      "Explanation": String
+  },
+}
+```
+
+> ? : Optional Key.
+
+## Parts
+
+## Schedules
 
 ## To Download from Command Line
 
